@@ -33,7 +33,9 @@ A helpful DMCA template can be found at: https://www.dmca.com/FAQ/What-is-a-DMCA
 
 ## Special Note for Complaints Regarding the BT Tracker Server
 
-RENFEI.NET operates an open BitTorrent tracker (tracker.renfei.net) for technical testing and research purposes.
+RENFEI.NET operates an open BitTorrent tracker (http://tracker.renfei.net:8080/announce) for technical testing and research purposes.
+
+[BitTorrent-Tracker-Blacklisted-InfoHash.md](/BitTorrent-Tracker-Blacklisted-InfoHash.md)
 
 **Important facts about the tracker**:
 
