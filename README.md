@@ -76,13 +76,13 @@ I do not ignore or delay legitimate requests—this repository is public proof o
 
 ## Contact
 
-Owner & Administrator: Renfei  
+Owner & Administrator: RenFei  
 Website: https://www.renfei.net  
 Designated DMCA email: **i@renfei.net**
 
 Thank you to all copyright holders who choose the transparent and lawful path.  
 Your cooperation makes the Internet better for everyone.
 
-— Renfei  
+— RenFei  
 Owner of RENFEI.NET  
 November 2025
