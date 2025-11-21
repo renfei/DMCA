@@ -35,8 +35,6 @@ A helpful DMCA template can be found at: https://www.dmca.com/FAQ/What-is-a-DMCA
 
 RENFEI.NET operates an open BitTorrent tracker (http://tracker.renfei.net:8080/announce) for technical testing and research purposes.
 
-[BitTorrent-Tracker-Blacklisted-InfoHash.md](/BitTorrent-Tracker-Blacklisted-InfoHash.md)
-
 **Important facts about the tracker**:
 
 - The tracker **does not host, store, or transmit** any torrent files or copyrighted content.
@@ -68,6 +66,7 @@ Thank you for your understanding and cooperation.
 
 All past and future takedown notices are listed here:  
 → [DMCA-Records.md](./DMCA-Records.md)
+→ [BitTorrent-Tracker-Blacklisted-InfoHash.md](/BitTorrent-Tracker-Blacklisted-InfoHash.md)
 
 Original (redacted) emails or PDFs are stored in the `/records/` folder.
 
