@@ -1,6 +1,6 @@
 # RENFEI.NET DMCA Takedown Notices Repository
 
-[![DMCA Protected](https://img.shields.io/badge/DMCA-Protected-blue.svg)](https://www.dmca.com/)
+[![DMCA Protected](https://img.shields.io/badge/DMCA-Protected-blue.svg)](https://www.copyright.gov/dmca/)
 
 ## Purpose of This Repository
 
