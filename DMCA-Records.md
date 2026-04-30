@@ -71,5 +71,5 @@ All redacted original notices (PDF or screenshots) are stored in the `/records/`
 - Personal information of the complainant (full name, address, phone, etc.) has been redacted for privacy.
 - If you are the copyright owner and believe your notice is missing or incorrectly listed, please contact i@renfei.net.
 
-Last updated: November 2025  
+Last updated: April 27, 2026  
 This table will be kept up-to-date within 24 hours of any new valid notice.
