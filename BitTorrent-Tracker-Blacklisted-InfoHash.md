@@ -1,8 +1,9 @@
-# BitTorrent Tracker Blacklisted InfoHash
+# BitTorrent Tracker Blocked Info Hashes
 
-The blacklist at http://tracker.renfei.net:8080/announce
+Info hashes recorded as blocked for `http://tracker.renfei.net:8080/announce` are listed below. This file is a repository
+record and should not be treated as a real-time status endpoint.
 
-## Blacklist
+## Blocked Info Hashes
 
 ```text
 1D15BD27B1D5053471634205E768C1B9AD73D176

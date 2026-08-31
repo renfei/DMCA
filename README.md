@@ -4,8 +4,8 @@
 
 ## Purpose of This Repository
 
-This public repository archives all DMCA takedown notices and copyright complaints received by **RENFEI.NET
-** (https://www.renfei.net).
+This public repository archives DMCA takedown notices and other copyright complaints received and recorded by
+**RENFEI.NET** (https://www.renfei.net).
 
 As the owner and operator of RENFEI.NET, I created this repository to:
 
@@ -14,8 +14,9 @@ As the owner and operator of RENFEI.NET, I created this repository to:
 - Show the community my commitment to respecting intellectual property rights
 - Welcome public oversight and prevent any perception of “silent” or hidden removals
 
-I respect copyright worldwide. Every valid DMCA notice is processed through the official channel will be recorded here (
-with personal information of the complainant redacted for privacy).
+I respect copyright worldwide. Notices handled through the contact channel below may be recorded here. Sensitive
+personal information may be redacted where appropriate; public business contact details may remain when they form part
+of the notice.
 
 ## How to Submit a DMCA Takedown Notice
 
@@ -33,7 +34,8 @@ but not limited to:
   act on behalf of the owner
 - A physical or electronic signature
 
-A helpful DMCA template can be found at: https://www.dmca.com/FAQ/What-is-a-DMCA-Takedown
+General information about the required elements of a notice is available from the U.S. Copyright Office:
+https://www.copyright.gov/512/.
 
 ## Special Note for Complaints Regarding the BT Tracker Server
 
@@ -50,40 +52,42 @@ research purposes.
 If you wish to file a complaint about content distributed via this tracker, please include the following required
 information in your DMCA notice:
 
-- The **Info Hash** (SHA-1 or SHA-256 hash) of the torrent you claim is infringing  
-  (example: `info_hash=A1B2C3D4E5F6...` or displayed as Magnet link `magnet:?xt=urn:btih:A1B2C3D4…`
+- The exact **Info Hash** used by the tracker (normally a 20-byte identifier represented as 40 hexadecimal characters)
+  (example: `info_hash=A1B2C3D4E5F6...` or a Magnet link such as `magnet:?xt=urn:btih:A1B2C3D4…`)
 - Proof of copyright ownership
 - All other standard DMCA elements listed above
 
 Notices that only contain a magnet link or torrent name **without the exact info hash** cannot be processed, because the
 tracker cannot identify the swarm without it.
 
-Once a valid notice containing the correct info hash is received, the tracker will immediately remove that hash from its
-announce list (usually within minutes).
+After receiving a sufficiently complete notice containing the correct info hash, I will review it and, where
+appropriate, act expeditiously to block that hash from tracker announcements.
 
 Thank you for your understanding and cooperation.
 
 ## Processing Workflow
 
-1. Notice received → Acknowledgment sent within 24 hours
+1. Notice received through the contact address below
 2. Review for DMCA compliance
-3. If valid → Infringing content is removed or disabled immediately
-4. Redacted copy of the notice is published in this repository
-5. Counter-notices are also accepted at the same email address and will be handled according to DMCA procedures
+3. Where appropriate → The identified material or tracker hash is removed, disabled, or blocked expeditiously
+4. A copy or transcription of the notice may be published in this repository, subject to appropriate redaction
+5. Counter-notices are accepted at the same email address and reviewed under the applicable process
 
 ## Record of All Notices
 
-All past and future takedown notices are listed here:  
+Notices currently recorded in this repository are listed here:
 → [DMCA-Records.md](./DMCA-Records.md)  
 → [BitTorrent-Tracker-Blacklisted-InfoHash.md](/BitTorrent-Tracker-Blacklisted-InfoHash.md)
 
-Original (redacted) emails or PDFs are stored in the `/records/` folder.
+Markdown transcriptions of recorded notices are stored in the `/records/` folder. They preserve the substance and, where
+practical, the wording of the source notices, including original spelling or grammatical errors. Sensitive personal
+information may be redacted, while public business contact information may remain.
 
 ## Additional Statement
 
-Although RENFEI.NET servers are located in China, I voluntarily follow the DMCA safe-harbor process for all global
-copyright complaints out of respect for international creators.  
-I do not ignore or delay legitimate requests—this repository is public proof of that commitment.
+Although RENFEI.NET infrastructure is operated outside the United States, I voluntarily use a notice-and-takedown
+process informed by 17 U.S.C. § 512 when handling copyright complaints. This statement describes the operational process
+used by RENFEI.NET and does not, by itself, assert eligibility for any statutory safe harbor.
 
 ## Contact
 
@@ -96,4 +100,4 @@ Your cooperation makes the Internet better for everyone.
 
 — RenFei  
 Owner of RENFEI.NET  
-November 2025
+Last reviewed: August 31, 2026
