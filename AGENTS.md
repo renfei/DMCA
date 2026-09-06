@@ -67,6 +67,53 @@ DMCA 投诉应同时落到三处，缺一不可：
 - `git commit` 信息遵循项目既有惯例（参考 `git log` 已有的中文 commit message）
 - 一次 DMCA 受理建议一次提交，便于回溯
 
+## DMCA 回复邮件模板
+
+向投诉方发送确认邮件时，**沿用下列模板**（仅替换 `[]` 占位符）。首次采用用户给 WARX 团队的历史回复作为基准，并由用户迭代加入以下要素：加粗关键词、`- ` 列表化 hash、页脚说明 + GitHub 仓库链接。
+
+> Dear [对方公司名] Team,
+>
+> Thank you for bringing this matter to our attention. We take intellectual property rights seriously and have acted promptly to comply with your DMCA takedown request regarding the alleged infringing material titled **"[作品标题]"**.
+>
+> Upon reviewing your notice, we have **successfully blacklisted** the following Infohash(es) on our BT Tracker server to prevent further dissemination of the reported content:
+>
+> - **[INFOHASH_1]**
+> - **[INFOHASH_2]**
+> - ...
+>
+> For transparency, the public DMCA repository is available at <https://github.com/renfei/DMCA>.
+>
+> This action was completed in accordance with our internal policies and the requirements of the DMCA. Please let us know if further steps are required from our side or if additional information is needed to resolve this matter.
+>
+> We remain committed to cooperating with copyright holders and authorized enforcement agencies to address infringement concerns. For future reports, feel free to contact us directly at [i@renfei.net] for expedited processing.
+>
+> Thank you for your understanding.
+>
+> Best regards,
+> RenFei
+> Owner & Administrator, RENFEI.NET
+> Designated DMCA contact: i@renfei.net
+
+写作要点：
+
+- 称呼使用 `[对方公司] Team,`（沿用项目历史回复样本）
+- 联系方式邮箱用 `[i@renfei.net]`（方括号包裹，沿用历史样本）
+- **加粗元素**（markdown-aware 邮件客户端会渲染为粗体）：
+  - 作品标题（仅加粗两侧引号包裹的名字，`titled` 不加粗）— `titled **"[作品标题]"**`
+  - `successfully blacklisted` 一词
+  - 每条 hash 列表项 — `- **[INFOHASH]**`
+- **hash 列表**：使用 markdown ` - `（半角短横 + 空格），多个 hash 各占一行
+- **GitHub 仓库**段：在 hash 列表之后、`This action was completed...` 之前，固定使用以下措辞：
+  `For transparency, the public DMCA repository is available at <https://github.com/renfei/DMCA>.`
+- **页脚**：在 `Best regards, RenFei` 之后追加两行：
+  ```
+  Owner & Administrator, RENFEI.NET
+  Designated DMCA contact: i@renfei.net
+  ```
+- 末尾署名 `RenFei` 后已由页脚覆盖组织名 / 联系方式，不必重复
+- 不附 tracker 工作原理等技术性解释
+- 对存在疑问的细节（权属、同一 hash 已在黑名单、缺要素等）通过 `[ ]` 留白，等用户决策后再发
+
 ---
 
 最后修订：2026-09-06
