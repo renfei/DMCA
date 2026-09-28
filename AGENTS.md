@@ -57,7 +57,17 @@ DMCA 投诉应同时落到三处，缺一不可：
 
 ## 不该做的事
 
+- **不要**把新数据行插到 `DMCA-Records.md` 的**分隔行之前**。GFM 表格要求「表头 → 分隔行 → 数据行」，
+  顺序错了整个表格会退化成纯文本（表头和内容混在一起）。
+  正确做法：先定位分隔行下标 `sep = next(i for i, l in enumerate(lines) if set(l.replace('|','').replace(' ','')) == {'-'})`，
+  再 `lines.insert(sep + 1, row)`；**不要**额外 new 一行 `|---|`，否则表头下会出现两行分隔行。改完必须用 `git diff` 复核。
+- **不要**假设 `BitTorrent-Tracker-Blacklisted-InfoHash.md` 结尾没有换行：文件末尾是 ```` ``` ```` **加一个换行**，
+  追加 hash 时锚定字符串要带上这个尾部换行，否则 assert 失败。
+
 - **不要**在黑名单文件里做字母排序（项目历史有意保留时间倒序）
+- **不要**让 `DMCA-Records.md` 表格的行保持各自不同的 padding：列宽必须全表统一，
+  否则 monospace 视图里 `Already Blocked` / `Verification Needed` 那几行会整行错位。
+  新增/修改行后，把每列宽度取全表最大值重排一次所有行（内容保持不变），并用 GFM 解析器验一遍行数。
 - **不要**修改邮件原文以"美化"语法或拼写（DMCA-Records.md 也提到 preserve 原文措辞）
 - **不要**在 `DMCA-Records.md` 表里写多份邮件合并行——一行 = 一封投诉
 - **不要**为单条 infohash 跨条目拆表——一个邮件即使有多个 hash，仍视为一行
