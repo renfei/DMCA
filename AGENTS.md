@@ -117,7 +117,52 @@ DMCA 投诉应同时落到三处，缺一不可：
 - 页脚两行：`Owner & Administrator, RENFEI.NET` / `Designated DMCA contact: i@renfei.net`
 - 正文即全部，**不写邮件头表格、不引用原投诉全文**
 - 不附 tracker 工作原理等技术性解释
-- 对存在疑问的细节（权属、同一 hash 已在黑名单、缺要素等）通过 `[ ]` 留白，等用户决策后再发
+- 对存在疑问的细节（权属、缺要素等）通过 `[ ]` 留白，等用户决策后再发
+
+### 重复投诉变体（同一 Info Hash 已在黑名单）
+
+**触发条件**：`DMCA-Records.md` 里 Status 记为 `Already Blocked`（hash 此前已受理过）。此时**不能**再用基础模板的
+「have **successfully blacklisted**」——那是新拉黑的表述，套在重复投诉上说不通。改用下列变体，如实告知对方这是重复的。
+
+> Dear [对方公司名] Team,
+>
+> Thank you for your notice dated [本次投诉日期] regarding the alleged infringing material titled **“[作品标题]”**.
+>
+> This is a **duplicate report**. The Infohash(es) listed below were **already blacklisted** on our BT Tracker server under an earlier notice received on [原投诉日期], and they remain blocked to this day. Our tracker enforces the blacklist automatically, so these entries cannot be announced or served to peers.
+>
+> Summary of the earlier submission:
+>
+> - Date received: [原投诉日期]
+> - Sender: [原投诉方邮箱]
+> - Notice ID: [原 Notice ID]
+> - Info Hash: **[INFOHASH_1]**
+> - Status: Already Blacklisted
+> - Record: <https://github.com/renfei/DMCA/blob/master/records/[YYYY-MM-DD]-dmca-[00N].md>
+>
+> For transparency, the public DMCA repository is available at <https://github.com/renfei/DMCA>, and every notice we have processed is listed in `DMCA-Records.md`.
+>
+> Each notice we receive has to be reviewed, logged and answered by hand. Resending a report for an Info Hash that is already blacklisted therefore creates **substantial duplicated manual work** on our side without changing the outcome. We kindly ask that you **verify against the repository above before submitting**, and refrain from sending further notices for content that already appears there. Please escalate to us only Infohash(es) that are not yet listed.
+>
+> We remain committed to cooperating with copyright holders and authorized enforcement agencies to address infringement concerns. For future reports, feel free to contact us directly at [i@renfei.net] for expedited processing.
+>
+> Thank you for your understanding.
+>
+> Best regards,
+> RenFei
+> Owner & Administrator, RENFEI.NET
+> Designated DMCA contact: i@renfei.net
+
+变体要点：
+
+- 去重结论放前面：第二句就点明 **duplicate report**，不藏在中间
+- **加粗元素**：`duplicate report`、`already blacklisted`、摘要里的 hash、`substantial duplicated manual work`、`verify against the repository above before submitting`
+- **摘要用 `- ` 列表而非表格**：要写明 Date received / Sender / Notice ID / Info Hash / Status / Record 六项；
+  邮件客户端对 GFM 表格支持不一致，列表是更稳的降级选择
+- 日期统一写成 `September 19, 2026` 这种「月份英文全拼 + 日 + 年」形式；多值时用 `- Earlier notice: ...` 列出每次的时间
+- Record 一行用 `<>` 自动链接指向 GitHub 上的原始记录文件；同 hash 多次时应列**最早**那次
+- 删掉基础模板里的 `This action was completed in accordance with...` 一句——本次没有新动作可陈述
+- 措辞直给但不失礼：先陈述内容早已处于屏蔽状态，再说明重复投诉的实际代价（人工复核开销）
+- 同一封里若混有新 hash 与已存在 hash，拆成两段陈述：`newly blacklisted` 一组、`already blacklisted` 一组，摘要只对后者
 
 ---
 
