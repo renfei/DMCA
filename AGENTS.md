@@ -79,37 +79,40 @@ DMCA 投诉应同时落到三处，缺一不可：
 
 ## DMCA 回复邮件模板
 
-向投诉方发送确认邮件时，**沿用下列模板**（仅替换 `[]` 占位符）。基准是**历史实际发出的邮件**（Art as Experience 一案，2026-09-29）：**纯文本，不带任何 markdown 标记**。
+向投诉方发送确认邮件时，**沿用下列模板**（仅替换 `[]` 占位符）。这是**带 markdown 标记的富文本邮件**：加粗与 `- ` 列表是刻意加的，markdown-aware 客户端会渲染成粗体与项目符号。
 
-```text
-Dear [对方公司名] Team,
+**注意**：不要用「从已发邮件里复制出来的纯文本」反推格式——复制过程会丢掉加粗和列表符号，看起来像裸文本。格式以本节为准。
 
-Thank you for bringing this matter to our attention. We take intellectual property rights seriously and have acted promptly to comply with your DMCA takedown request regarding the alleged infringing material titled “[作品标题]”.
-
-Upon reviewing your notice, we have successfully blacklisted the following Infohash(es) on our BT Tracker server to prevent further dissemination of the reported content:
-
-[INFOHASH_1]
-[INFOHASH_2]
-For transparency, the public DMCA repository is available at https://github.com/renfei/DMCA.
-
-This action was completed in accordance with our internal policies and the requirements of the DMCA. Please let us know if further steps are required from our side or if additional information is needed to resolve this matter.
-
-We remain committed to cooperating with copyright holders and authorized enforcement agencies to address infringement concerns. For future reports, feel free to contact us directly at [i@renfei.net] for expedited processing.
-
-Thank you for your understanding.
-
-Best regards,
-RenFei
-Owner & Administrator, RENFEI.NET
-Designated DMCA contact: i@renfei.net
-```
+> Dear [对方公司名] Team,
+>
+> Thank you for bringing this matter to our attention. We take intellectual property rights seriously and have acted promptly to comply with your DMCA takedown request regarding the alleged infringing material titled **“[作品标题]”**.
+>
+> Upon reviewing your notice, we have **successfully blacklisted** the following Infohash(es) on our BT Tracker server to prevent further dissemination of the reported content:
+>
+> - **[INFOHASH_1]**
+> - **[INFOHASH_2]**
+> - ...
+>
+> For transparency, the public DMCA repository is available at <https://github.com/renfei/DMCA>.
+>
+> This action was completed in accordance with our internal policies and the requirements of the DMCA. Please let us know if further steps are required from our side or if additional information is needed to resolve this matter.
+>
+> We remain committed to cooperating with copyright holders and authorized enforcement agencies to address infringement concerns. For future reports, feel free to contact us directly at [i@renfei.net] for expedited processing.
+>
+> Thank you for your understanding.
+>
+> Best regards,
+> RenFei
+> Owner & Administrator, RENFEI.NET
+> Designated DMCA contact: i@renfei.net
 
 写作要点：
 
-- **纯文本**。不加粗、不用 `- ` 列表、URL 不写 `< >` 尖括号——历史邮件就是裸文本，markdown 标记在纯文本客户端里只会显示成可见的星号
 - 称呼 `[对方公司] Team,`
-- 作品标题用弯引号 `“”` 包裹；`titled` 之后不加冒号，标点紧跟引号
-- hash 每行一条，紧跟 `...reported content:` 段；**最后一条 hash 的下一行直接接** `For transparency...`，中间不空行
+- 作品标题：弯引号 `“”` 包裹，**整体加粗**（含引号），`titled` 不加粗、后面不加冒号
+- **加粗元素**：作品标题、`successfully blacklisted`、每条 hash 列表项
+- **hash 列表**：markdown `- ` 列表，每行一条（`- **[INFOHASH]**`）
+- **GitHub 仓库**段固定在 hash 列表之后、`This action was completed...` 之前，URL 用 `<>` 包成自动链接
 - 联系方式邮箱保留方括号 `[i@renfei.net]`
 - 页脚两行：`Owner & Administrator, RENFEI.NET` / `Designated DMCA contact: i@renfei.net`
 - 正文即全部，**不写邮件头表格、不引用原投诉全文**
